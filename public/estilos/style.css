@@ -1,0 +1,114 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #202d4a;
+  }
+  
+  .contenedor-principal {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1b263f;
+	height: 70vh;
+	
+  }
+  
+  .contenedor-header {
+	background-color: #1b263f;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	display: flex;
+	padding: 0.60rem;
+	margin-top: 0;
+  }
+  
+  .contenedor {
+	text-align: center;
+	padding: 20px;
+	background-color: #1b263f;
+  }
+  
+  .titulo {
+	font-size: 4rem;
+	color: #ffffff;
+	font-weight: 900;
+  }
+  
+  .descripcion {
+	font-size: 1rem;
+	color: #dedede;
+  }
+  
+  .reproductor {
+	margin-left: 20px;
+  }
+  
+  video {
+	max-width: 100%;
+	width: 1000px;
+	height: auto;
+	
+	border: 1px solid #ddd;
+	border-radius: 4px;
+  }
+  
+  header {
+	padding: 22px 0;
+  }
+  
+  header .contenedor {
+	display: flex;
+	align-items: center;
+  }
+  
+  header .logotipo {
+	height: auto;
+	width: 200px;
+  }
+  
+  header nav {
+	display: flex;
+	align-items: center;
+  }
+  
+  header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+  }
+  
+  header nav a:hover,
+  header nav a.activo {
+	color: #FFF;
+  }
+  
+  @media (max-width: 1200px) {
+	.titulo {
+	  font-size: 3rem;
+	}
+  
+	header .logotipo {
+	  width: 150px;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	header nav {
+	  display: none;
+	}
+  }
